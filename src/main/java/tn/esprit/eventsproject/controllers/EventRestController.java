@@ -1,6 +1,7 @@
 package tn.esprit.eventsproject.controllers;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import tn.esprit.eventsproject.entities.Event;
 import tn.esprit.eventsproject.entities.Logistics;
@@ -9,7 +10,7 @@ import tn.esprit.eventsproject.services.IEventServices;
 
 import java.time.LocalDate;
 import java.util.List;
-
+@Slf4j
 @RequiredArgsConstructor
 @RequestMapping("event")
 @RestController
